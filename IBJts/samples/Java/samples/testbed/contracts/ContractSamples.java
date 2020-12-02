@@ -178,6 +178,15 @@ public class ContractSamples {
 		contract.exchange("SMART");
 		return contract;
 	}
+
+    public static Contract etf() {
+        Contract contract = new Contract();
+        contract.symbol("QQQ");
+        contract.secType("STK");
+        contract.currency("USD");
+        contract.exchange("SMART");
+        return contract;
+    }
 	
 	public static Contract USOptionContract() {
 		Contract contract = new Contract();
@@ -227,7 +236,7 @@ public class ContractSamples {
 		//! [optcontract_localsymbol]
 		Contract contract = new Contract();
 		//Watch out for the spaces within the local symbol!
-		contract.localSymbol("C DBK  DEC 20  1600");
+		contract.localSymbol("P BMW  JUL 20  4650");
 		contract.secType("OPT");
 		contract.exchange("DTB");
 		contract.currency("EUR");
@@ -532,16 +541,6 @@ public class ContractSamples {
 		contract.secType("NEWS");
 		contract.exchange("FLY"); //Fly on the Wall
 		//! [newscontractfly]
-		return contract;
-	}
-	
-        public static Contract MTbroadtapeNewsFeed() {
-		//! [newscontractmt]
-		Contract contract = new Contract();
-		contract.symbol("MT:MT_ALL"); //BroadTape All News
-		contract.secType("NEWS");
-		contract.exchange("MT"); //Midnight Trader
-		//! [newscontractmt]
 		return contract;
 	}
 

@@ -7,7 +7,7 @@ Copyright (C) 2019 Interactive Brokers LLC. All rights reserved. This code is su
 
 VERSION = {
     'major': 9,
-    'minor': 79,
+    'minor': 81,
     'micro': 1}
 
 
