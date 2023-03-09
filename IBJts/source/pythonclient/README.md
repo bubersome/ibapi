@@ -49,14 +49,23 @@ Instalation notes:
 
 * you can use this to build a source distribution
 
+```
 python3 setup.py sdist
+```
+
+
 
 * you can use this to build a wheel
 
+```
 python3 setup.py bdist_wheel
+```
+
+
 
 * you can use this to install the wheel
 
-python3 -m pip install --user --upgrade dist/ibapi-9.75.1-py3-none-any.whl
-
+```
+python3 -m pip install --upgrade dist/ibapi-10.19.1-py3-none-any.whl
+```
 
